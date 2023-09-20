@@ -1,0 +1,9 @@
+@use '/sass/abstract/variables';
+@use '/sass/abstract/mixins';
+
+.container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
