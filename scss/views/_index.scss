@@ -21,7 +21,7 @@
 }
 
 // colors
-.-white        {
+.--white        {
     color: variables.$white;
 }
 
@@ -39,4 +39,8 @@
 }
 .--is-green     {
     background-color: variables.$green;
+}
+
+.--is-transparent-red   {
+    background-color: variables.$transparent-red;
 }

@@ -15,13 +15,13 @@ body {
 
 @media (width >= 375px) {
   body {
-    background: #ff7a7acc url("bg-intro-mobile.101781c4.png");
+    background-image: url("bg-intro-mobile.101781c4.png");
   }
 }
 
 @media (width >= 1440px) {
   body {
-    background: #ff7a7acc url("bg-intro-desktop.5974f34b.png");
+    background-image: url("bg-intro-desktop.5974f34b.png");
   }
 }
 
@@ -40,7 +40,7 @@ body {
   font-weight: 500;
 }
 
-.-white {
+.--white {
   color: #fff;
 }
 
@@ -60,17 +60,25 @@ body {
   background-color: #38cc8c;
 }
 
-.wrapper {
-  grid-template-rows: repeat(5, 1fr);
-  display: grid;
+.--is-transparent-red {
+  background-color: #ff7a7acc;
 }
 
-.card {
-  grid-row-end: 3;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
-  display: flex;
+@media (width >= 375px) {
+  .wrapper {
+    grid-template-rows: repeat(5, 1fr);
+    place-items: center;
+    display: grid;
+  }
+
+  .card {
+    border-radius: 15px;
+    grid-row-end: 3;
+    align-content: center;
+    justify-items: center;
+    padding: 1%;
+    display: grid;
+  }
 }
 
 button {
@@ -91,7 +99,6 @@ button {
 }
 
 .introduction {
-  color: #fff;
   text-align: center;
   flex-direction: column;
   grid-row-end: 2;
@@ -100,11 +107,16 @@ button {
 
 @media (width >= 375px) {
   .introduction {
+    height: 9rem;
     margin-top: 4rem;
   }
 
   .introduction__header {
     font-size: 16px;
+  }
+
+  .introduction__content {
+    line-height: 1.5;
   }
 }
 
