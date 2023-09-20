@@ -1,0 +1,33 @@
+@use '/sass/abstract/variables';
+@use '/sass/abstract/mixins';
+
+// font styles
+
+.--is-x-bold   {
+    font-weight: variables.$font-weight-bold;
+}
+
+.--is-x-bold   {
+    font-weight: variables.$font-weight-bold;
+}
+
+// colors
+.-white        {
+    color: variables.$white;
+}
+
+.--is-grey-blue{
+    color: variables.$grayish-blue;
+}
+
+.--is-red   {
+    color: variables.$red;
+}
+
+.--is-blue     {
+    background-color: variables.$blue;
+}
+
+.--is-green     {
+    background-color: variables.$green;
+}
