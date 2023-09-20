@@ -6,6 +6,7 @@ $mobile: 375px;
 $desktop: 1440px;
 
 // colors
+$white: hsl(0, 0%, 100%);
 $red: hsl(0, 100%, 74%);
 $green: hsl(154, 59%, 51%);
 $blue: hsl(248, 32%, 49%);
@@ -18,6 +19,7 @@ $font-body-copy: 16px;
     font-family: Poppins;
     src: url(https://fonts.google.com/specimen/Poppins);
 }
+$font-stack: 'Poppins', helvetica, sans;
 $font-weight-normal: 400;
 $font-weight-bold: 500;
 $font-weight-x-bold: 600;

@@ -1,6 +1,8 @@
-@use '/scss/abstract/variables';
+@use '/sass/abstract/variables';
+@use '/sass/abstract/mixins';
 
 body    {
+    font-family: variables.$font-stack;
 
     @include layout('mobile'){
         background-image: url("/images/bg-intro-mobile.png");

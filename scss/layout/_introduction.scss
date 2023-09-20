@@ -1,0 +1,13 @@
+@use '/sass/abstract/variables';
+@use '/sass/abstract/mixins';
+
+.introduction  {
+    color: variables.$white;
+    &__header   {
+        font-weight: variables.$font-weight-x-bold;
+    }
+
+    &__content  {
+        font-weight: variables.$font-weight-normal;
+    }
+}
