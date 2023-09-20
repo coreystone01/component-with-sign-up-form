@@ -104,10 +104,17 @@ button {
 }
 
 .container {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1%;
   display: flex;
+}
+
+#component-form {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 4rem;
 }
 
 .introduction {
