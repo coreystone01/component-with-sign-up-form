@@ -1,0 +1,13 @@
+@use '/scss/abstract/variables';
+
+body    {
+
+    @include layout('mobile'){
+        background-image: url("/images/bg-intro-mobile.png");
+        background: variables.$red;
+    }
+    @include layout('desktop'){
+        background-image: url("/images/bg-intro-desktop.png");
+    }
+    
+}

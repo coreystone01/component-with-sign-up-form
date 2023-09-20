@@ -1,0 +1,26 @@
+// variables based on the style guide provided with project
+
+// breakpoints
+$mini-mobile: 275px;
+$mobile: 375px;
+$desktop: 1440px;
+
+// colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+$font-body-copy: 16px;
+
+@font-face {
+    font-family: Poppins;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-x-bold: 600;
+$font-weight-xx-bold: 700;
+
+
