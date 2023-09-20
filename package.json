@@ -4,7 +4,8 @@
   "description": "Component with Signup Form challenge from Front End Mentor",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/coreystone01/component-with-sign-up-form/issues"
   },
-  "homepage": "https://github.com/coreystone01/component-with-sign-up-form#readme"
+  "homepage": "https://github.com/coreystone01/component-with-sign-up-form#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3"
+  }
 }

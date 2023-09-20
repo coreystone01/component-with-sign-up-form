@@ -1,4 +1,4 @@
-@use '/sass/abstract/variables';
+@use '/scss/abstract/variables';
 
 @mixin layout($breakpoint){
     @if ($breakpoint=='mini-mobile')

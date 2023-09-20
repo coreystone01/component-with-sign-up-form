@@ -1,14 +1,14 @@
-@use '/sass/abstract/variables';
-@use '/sass/abstract/mixins';
+@use '/scss/abstract/variables';
+@use '/scss/abstract/mixins';
 
 body    {
     font-family: variables.$font-stack;
 
-    @include layout('mobile'){
+    @include mixins.layout('mobile'){
         background-image: url("/images/bg-intro-mobile.png");
         background: variables.$red;
     }
-    @include layout('desktop'){
+    @include mixins.layout('desktop'){
         background-image: url("/images/bg-intro-desktop.png");
     }
     
