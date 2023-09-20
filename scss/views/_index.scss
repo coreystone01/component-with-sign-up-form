@@ -6,6 +6,10 @@
 .--is-normal   {
     font-weight: variables.$font-weight-normal;
     font-size: variables.$font-body-copy;
+    // apply a smaller p font at smaller breakpoints
+    @include mixins.layout('mobile'){
+        font-size: variables.$font-body-copy-mobile;
+    }
 }
 
 .--is-x-bold   {
@@ -29,10 +33,10 @@
     color: variables.$red;
 }
 
+// we know that the colors given here are used as background colors
 .--is-blue     {
     background-color: variables.$blue;
 }
-
 .--is-green     {
     background-color: variables.$green;
 }

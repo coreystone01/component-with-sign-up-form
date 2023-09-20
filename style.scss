@@ -2,8 +2,10 @@
 @use './scss/abstract/variables';
 @use './scss/abstract/mixins';
 @use './scss/layout/body';
+@use './scss/views/index';
 @use './scss/layout/wrapper';
 @use './scss/modules/card';
+@use './scss/modules/button';
 @use './scss/modules/container';
 @use './scss/modules/introduction';
 @use './scss/modules/legal';

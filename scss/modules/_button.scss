@@ -2,10 +2,13 @@
 @use '/scss/abstract/mixins';
 
 
-.button {
-    grid-row-end: 4;
+button {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+
+#claim  {
+    grid-row-end: 5;
 }

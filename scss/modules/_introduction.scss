@@ -9,10 +9,12 @@
     text-align: center;
     
     &__header   {
-        font-weight: variables.$font-weight-x-bold;
+        // not needed as we have a class applied in html
+        // font-weight: variables.$font-weight-x-bold;
     }
 
     &__content  {
-        font-weight: variables.$font-weight-normal;
+        // not needed as we have a class applied in html
+        // font-weight: variables.$font-weight-normal;
     }
 }
