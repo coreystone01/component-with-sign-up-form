@@ -15,14 +15,19 @@ body {
 
 @media (width >= 375px) {
   body {
-    background: #ff7a7a;
+    background: #ff7a7acc url("bg-intro-mobile.101781c4.png");
   }
 }
 
 @media (width >= 1440px) {
   body {
-    background-image: url("bg-intro-desktop.5974f34b.png");
+    background: #ff7a7acc url("bg-intro-desktop.5974f34b.png");
   }
+}
+
+.wrapper {
+  flex-direction: column;
+  display: flex;
 }
 
 .card, .container {

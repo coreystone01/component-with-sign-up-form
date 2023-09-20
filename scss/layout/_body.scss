@@ -5,10 +5,12 @@ body    {
     font-family: variables.$font-stack;
 
     @include mixins.layout('mobile'){
+        // make sure the img goes after the red so it shows up on top of the color
+        background: variables.$transparent-red;
         background-image: url("/images/bg-intro-mobile.png");
-        background: variables.$red;
     }
     @include mixins.layout('desktop'){
+        background: variables.$transparent-red;
         background-image: url("/images/bg-intro-desktop.png");
     }
     
