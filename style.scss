@@ -2,7 +2,8 @@
 @use './scss/abstract/variables';
 @use './scss/abstract/mixins';
 @use './scss/layout/body';
-@use './scss/modules/wrapper';
+@use './scss/layout/wrapper';
 @use './scss/modules/card';
 @use './scss/modules/container';
-@use './scss/layout/introduction';
+@use './scss/modules/introduction';
+@use './scss/modules/legal';
