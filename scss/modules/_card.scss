@@ -9,5 +9,12 @@
         display: grid;
         align-content: center;
         justify-items: center;
+        width: 20rem;
+        height: 5rem;
+    }
+
+    &__content{
+        line-height: 1.5;
+        text-align: center;
     }
 }

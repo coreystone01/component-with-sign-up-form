@@ -8,12 +8,13 @@
     text-align: center;
     @include mixins.layout('mobile'){
         margin-top: 4rem;
-        height: 9rem;
+        margin-bottom: 2rem;
+        height: 12rem;
     }
 
     &__header   {
         @include mixins.layout('mobile'){
-            font-size: variables.$font-body-copy;
+            font-size: 28px;
         }
     }
 

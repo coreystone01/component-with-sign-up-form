@@ -17,7 +17,11 @@
 }
 
 .--is-x-bold   {
-    font-weight: variables.$font-weight-bold;
+    font-weight: variables.$font-weight-x-bold;
+}
+
+.--is-xx-bold   {
+    font-weight: variables.$font-weight-xx-bold;
 }
 
 // colors
