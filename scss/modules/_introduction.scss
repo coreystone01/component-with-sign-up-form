@@ -2,6 +2,9 @@
 @use '/scss/abstract/mixins';
 
 .introduction  {
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
     color: variables.$white;
     text-align: center;
     

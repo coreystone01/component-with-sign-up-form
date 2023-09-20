@@ -3,6 +3,11 @@
 
 // font styles
 
+.--is-normal   {
+    font-weight: variables.$font-weight-normal;
+    font-size: variables.$font-body-copy;
+}
+
 .--is-x-bold   {
     font-weight: variables.$font-weight-bold;
 }
