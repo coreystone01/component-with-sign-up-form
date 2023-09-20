@@ -30,6 +30,12 @@ body {
   font-weight: 400;
 }
 
+@media (width >= 375px) {
+  .--is-normal {
+    font-size: 12px;
+  }
+}
+
 .--is-x-bold {
   font-weight: 500;
 }
@@ -92,9 +98,25 @@ button {
   display: flex;
 }
 
+@media (width >= 375px) {
+  .introduction {
+    margin-top: 4rem;
+  }
+
+  .introduction__header {
+    font-size: 16px;
+  }
+}
+
 .legal {
   text-align: center;
   grid-row-end: 6;
+}
+
+@media (width >= 375px) {
+  .legal {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=index.8353e49f.css.map */

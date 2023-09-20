@@ -4,4 +4,7 @@
 .legal  {
     grid-row-end: 6;
     text-align: center;
+    @include mixins.layout('mobile'){
+        font-size: variables.$font-body-copy-mobile;
+    }
 }
