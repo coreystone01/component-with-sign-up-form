@@ -1,8 +1,23 @@
 @use '/scss/abstract/variables';
 @use '/scss/abstract/mixins';
 
-#component-form{
+.component-form{
     background-color: variables.$white;
     border-radius: 15px;
     margin-top: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    align-content: space-evenly;
+    gap: 0.8rem;
+    padding: 3%;
+    width: 20rem;
+
+    input {
+        padding: 2%;
+        border: variables.$grayish-blue solid 1px;
+        font-weight: bold;
+        width: 17.3rem;
+    };
 }

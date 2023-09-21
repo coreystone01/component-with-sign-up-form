@@ -70,7 +70,7 @@ body {
 
 @media (width >= 375px) {
   .wrapper {
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     place-items: center;
     display: grid;
   }
@@ -99,7 +99,10 @@ button {
 }
 
 #claim {
-  grid-row-end: 5;
+  border-radius: 5px;
+  grid-row-end: 6;
+  width: 18rem;
+  height: 4rem;
   font-size: 18px;
 }
 
@@ -111,10 +114,23 @@ button {
   display: flex;
 }
 
-#component-form {
+.component-form {
   background-color: #fff;
   border-radius: 15px;
+  place-content: space-evenly center;
+  align-items: center;
+  gap: .8rem;
+  width: 20rem;
   margin-top: 4rem;
+  padding: 3%;
+  display: grid;
+}
+
+.component-form input {
+  border: 1px solid #b9b6d3;
+  width: 17.3rem;
+  padding: 2%;
+  font-weight: bold;
 }
 
 .introduction {
