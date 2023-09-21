@@ -74,15 +74,22 @@ body {
     place-items: center;
     display: grid;
   }
+}
+
+.wrapper > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width >= 375px) {
+  .wrapper > * {
+    max-width: 20rem;
+  }
 
   .card {
     border-radius: 15px;
-    grid-row-end: 3;
     align-content: center;
     justify-items: center;
-    width: 20rem;
-    height: 5rem;
-    margin-bottom: 1rem;
     padding: 1%;
     display: grid;
   }
@@ -99,12 +106,14 @@ button {
   display: flex;
 }
 
-#claim {
-  border-radius: 5px;
-  grid-row-end: 6;
-  width: 18rem;
-  height: 4rem;
-  font-size: 18px;
+@media (width >= 375px) {
+  #claim {
+    border-radius: 5px;
+    grid-row-end: 6;
+    width: 80%;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
 }
 
 .container {

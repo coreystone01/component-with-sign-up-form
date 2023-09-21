@@ -2,20 +2,24 @@
 @use '/scss/abstract/mixins';
 
 .card   {
+    // base styles for a card
     @include mixins.layout('mobile'){
-        grid-row-end: 3;
         padding: 1%;
         border-radius: 15px;
         display: grid;
         align-content: center;
         justify-items: center;
-        width: 20rem;
-        height: 5rem;
-        margin-bottom: 1rem;
     }
 
-    &__content{
-        line-height: 1.5;
-        text-align: center;
+    .callout__card{
+        @extend %card;
+        grid-row-end: 3;
+        width: 10rem;
+        height: 5rem;
+
+        &__card__content {
+            line-height: 1.5;
+            text-align: center;
+        }
     }
 }
