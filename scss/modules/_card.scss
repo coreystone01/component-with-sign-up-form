@@ -3,14 +3,21 @@
 
 .card   {
     // base styles for a card
-    @include mixins.layout('mobile'){
-        padding: 1%;
-        border-radius: 15px;
-        display: grid;
-        align-content: center;
-        justify-items: center;
-        text-align: center;
-    }
+    padding: 1%;
+    border-radius: 15px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    // @include mixins.layout('mobile'){
+    //     padding: 1%;
+    //     border-radius: 15px;
+    //     display: grid;
+    //     align-content: center;
+    //     justify-items: center;
+    //     text-align: center;
+    // }
+}
 
 .callout__card{
     @extend .card;
@@ -22,5 +29,4 @@
         line-height: 1.5;
         text-align: center;
     }
-}
 }

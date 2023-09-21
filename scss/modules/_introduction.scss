@@ -7,8 +7,9 @@
     flex-direction: column;
     text-align: center;
     @include mixins.layout('mobile'){
+        height: 14rem;
         margin-top: 4rem;
-        height: 12rem;
+        gap: 1rem;
     }
 
     &__header   {
