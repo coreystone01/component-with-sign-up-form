@@ -7,6 +7,17 @@
         grid-template-rows: repeat(6, 1fr);
         align-items: center;
         justify-items: center;
-        padding-bottom: 15rem;
+        // padding-bottom: 15rem;
+    }
+
+    > * {
+        // margin may need to be set on the parent, but I will test first. We want everything under wrapper to have a max-width of 20rem (at mobile) and control it's margins from the parent. Now we can more easily set the width of all the child elements of wrapper.
+        margin-left: auto;
+        margin-right: auto;
+        @include mixins.layout('mobile'){
+            max-width: 20rem;
+        }
+        margin-left: auto;
+        margin-right: auto;
     }
 }

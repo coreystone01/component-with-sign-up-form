@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -73,7 +72,6 @@ body {
   .wrapper {
     grid-template-rows: repeat(6, 1fr);
     place-items: center;
-    padding-bottom: 15rem;
     display: grid;
   }
 
