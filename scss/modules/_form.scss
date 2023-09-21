@@ -4,20 +4,22 @@
 .component-form{
     background-color: variables.$white;
     border-radius: 15px;
-    margin-top: 4rem;
     display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     margin-top: 4rem;
     align-content: space-evenly;
     gap: 0.8rem;
-    padding: 3% 3% 10% 3%;
+    padding: 3%;
+    height: 22rem;
     width: 90%;
     grid-row-end: 4;
-
+    
+    // the input should really be relative to the form, but this styling works great for now
     input {
-        width: 80%;
-        padding: 2% 2% 2% 4%;
+        width: 15rem;
+        padding: 4%;
         border: variables.$grayish-blue solid 1px;
         font-weight: bold;
     };

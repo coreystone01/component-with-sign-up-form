@@ -6,17 +6,19 @@ button {
     display: flex;
     justify-content: center;
     align-content: center;
-    text-align: center;
+    // text-align: center;
+    align-items: center;
 }
 
 #claim  {
     // need to set the form parent container max width
     @include mixins.layout('mobile'){
         grid-row-end: 6;
-        font-size: 1.125rem;
+        font-size: 0.6rem;
         // set our claim button to be 80% width of it's parent
-        width: 80%;
-        height: 4rem;
+        width: 100%;
+        height: 3rem;
         border-radius: 5px;
+        padding: 0;
     }
 }

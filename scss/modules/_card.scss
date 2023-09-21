@@ -9,17 +9,18 @@
         display: grid;
         align-content: center;
         justify-items: center;
+        text-align: center;
     }
 
-    .callout__card{
-        @extend %card;
-        grid-row-end: 3;
-        width: 80%;
-        height: 5rem;
+.callout__card{
+    @extend .card;
+    grid-row-end: 3;
+    width: 90%;
+    height: 5rem;
 
-        &__card__content {
-            line-height: 1.5;
-            text-align: center;
-        }
+    &__card__content {
+        line-height: 1.5;
+        text-align: center;
     }
+}
 }

@@ -2,22 +2,22 @@
 @use '/scss/abstract/mixins';
 
 .wrapper    {
+    // this line of code on the wrapper element prevents horizontal scrolling and hides the horizontal scrollbar
+    overflow-x: hidden;
     @include mixins.layout('mobile'){
         display: grid;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(min-content, 4rem));
         align-items: center;
         justify-items: center;
-        // padding-bottom: 15rem;
+        @include mixins.layout('mobile'){
+            // technically a max-width rem of 20 makes the site responsive up to almost 1000, but we can use other media queries for adjusting to better fit larger screens like tablets and desktops
+            max-width: 20rem;
+            // always take up 100% of the max width
+            width: 100%;
+        }
     }
 
-    > * {
-        // margin may need to be set on the parent, but I will test first. We want everything under wrapper to have a max-width of 20rem (at mobile) and control it's margins from the parent. Now we can more easily set the width of all the child elements of wrapper.
-        margin-left: auto;
-        margin-right: auto;
-        @include mixins.layout('mobile'){
-            max-width: 20rem;
-        }
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // > * {
+
+    // }
 }

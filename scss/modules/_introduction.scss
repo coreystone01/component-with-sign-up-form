@@ -8,7 +8,6 @@
     text-align: center;
     @include mixins.layout('mobile'){
         margin-top: 4rem;
-        margin-bottom: 4rem;
         height: 12rem;
     }
 

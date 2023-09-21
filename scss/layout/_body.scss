@@ -3,6 +3,8 @@
 
 body    {
     font-family: variables.$font-stack;
+    display: flex;
+    justify-content: center;
 
     @include mixins.layout('mobile'){
         // make sure the img goes after the red so it shows up on top of the color

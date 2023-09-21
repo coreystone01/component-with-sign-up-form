@@ -10,7 +10,9 @@
 }
 
 body {
+  justify-content: center;
   font-family: Poppins, helvetica, sans;
+  display: flex;
 }
 
 @media (width >= 375px) {
@@ -68,25 +70,28 @@ body {
   background-color: #ff7a7a;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 @media (width >= 375px) {
   .wrapper {
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 4rem));
     place-items: center;
     display: grid;
   }
 }
 
-.wrapper > * {
-  margin-left: auto;
-  margin-right: auto;
+@media (width >= 375px) and (width >= 375px) {
+  .wrapper {
+    width: 100%;
+    max-width: 20rem;
+  }
 }
 
 @media (width >= 375px) {
-  .wrapper > * {
-    max-width: 20rem;
-  }
-
-  .card {
+  .card, .card .callout__card {
+    text-align: center;
     border-radius: 15px;
     align-content: center;
     justify-items: center;
@@ -95,14 +100,20 @@ body {
   }
 }
 
-.card__content {
+.card .callout__card {
+  grid-row-end: 3;
+  width: 90%;
+  height: 5rem;
+}
+
+.card .callout__card__card__content {
   text-align: center;
   line-height: 1.5;
 }
 
 button {
-  text-align: center;
   place-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -110,9 +121,10 @@ button {
   #claim {
     border-radius: 5px;
     grid-row-end: 6;
-    width: 80%;
-    height: 4rem;
-    font-size: 1.125rem;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    font-size: .6rem;
   }
 }
 
@@ -129,18 +141,19 @@ button {
   border-radius: 15px;
   grid-row-end: 4;
   place-content: space-evenly center;
-  align-items: center;
+  place-items: center;
   gap: .8rem;
-  width: 20rem;
+  width: 90%;
+  height: 22rem;
   margin-top: 4rem;
-  padding: 3% 3% 10%;
+  padding: 3%;
   display: grid;
 }
 
 .component-form input {
   border: 1px solid #b9b6d3;
-  width: 17rem;
-  padding: 2% 2% 2% 4%;
+  width: 15rem;
+  padding: 4%;
   font-weight: bold;
 }
 
@@ -155,7 +168,6 @@ button {
   .introduction {
     height: 12rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
   }
 
   .introduction__header {
