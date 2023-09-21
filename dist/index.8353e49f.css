@@ -65,7 +65,7 @@ body {
 }
 
 .--is-transparent-red {
-  background-color: #ff7a7acc;
+  background-color: #ff7a7a;
 }
 
 @media (width >= 375px) {
@@ -131,8 +131,8 @@ button {
 
 .component-form input {
   border: 1px solid #b9b6d3;
-  width: 17.3rem;
-  padding: 2%;
+  width: 17rem;
+  padding: 2% 2% 2% 4%;
   font-weight: bold;
 }
 
@@ -147,7 +147,7 @@ button {
   .introduction {
     height: 12rem;
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .introduction__header {
