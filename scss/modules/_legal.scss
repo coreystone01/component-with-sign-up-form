@@ -2,9 +2,11 @@
 @use '/scss/abstract/mixins';
 
 .legal  {
-    grid-row-end: 6;
-    text-align: center;
     @include mixins.layout('mobile'){
         font-size: variables.$font-body-copy-mobile;
+        position: relative;
+        width: 20rem;
+        grid-row-end: 6;
+        text-align: center;
     }
 }

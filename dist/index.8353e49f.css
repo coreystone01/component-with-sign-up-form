@@ -72,6 +72,7 @@ body {
   .wrapper {
     grid-template-rows: repeat(6, 1fr);
     place-items: center;
+    padding-bottom: 15rem;
     display: grid;
   }
 
@@ -82,6 +83,7 @@ body {
     justify-items: center;
     width: 20rem;
     height: 5rem;
+    margin-bottom: 1rem;
     padding: 1%;
     display: grid;
   }
@@ -117,12 +119,13 @@ button {
 .component-form {
   background-color: #fff;
   border-radius: 15px;
+  grid-row-end: 4;
   place-content: space-evenly center;
   align-items: center;
   gap: .8rem;
   width: 20rem;
   margin-top: 4rem;
-  padding: 3%;
+  padding: 3% 3% 10%;
   display: grid;
 }
 
@@ -154,16 +157,13 @@ button {
   .introduction__content {
     line-height: 1.5;
   }
-}
 
-.legal {
-  text-align: center;
-  grid-row-end: 6;
-}
-
-@media (width >= 375px) {
   .legal {
+    text-align: center;
+    grid-row-end: 6;
+    width: 20rem;
     font-size: 14px;
+    position: relative;
   }
 }
 

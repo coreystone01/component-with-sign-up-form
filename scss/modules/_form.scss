@@ -11,8 +11,9 @@
     margin-top: 4rem;
     align-content: space-evenly;
     gap: 0.8rem;
-    padding: 3%;
+    padding: 3% 3% 10% 3%;
     width: 20rem;
+    grid-row-end: 4;
 
     input {
         padding: 2%;
